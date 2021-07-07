@@ -1,0 +1,86 @@
+{% load static %}
+               <!--Start contact form-->
+               <div class="col-md-8 col-md-offset-2 contact-form">
+<div class="contact-info text-center">
+<p>Phone: +91-141-2730019</p>
+                         <p> +91-9928424518</p>
+                       <p>sales@kagzindia.com </p>
+
+                    </div>
+
+
+                     <form action="/com/contact/" method="post">{% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input class="form-control" id="name" name='name' placeholder="Full Name" type="text">
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" id="email" name='email' placeholder="Your Email" type="email">
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" id="phone" name='phone' placeholder="Subject" type="text">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control" id="desc" name='desc' rows="7" placeholder="Your Message"></textarea>
+                            </div>
+                            <div class="col-md-12 text-right">
+                                <button type="submit" class="btn btn-green">SEND MESSAGE</button>
+                            </div>
+                        </div>
+                    </form>
+               </div>
+          </form>
+    <!--End contact form-->
+
+       </div> <!-- /.container-->
+
+
+   </section>
+   <!--End Contact-->
+
+
+   <!--Start Footer-->
+   <footer>
+       <div class="container">
+           <div class="row">
+               <!--Start copyright-->
+               <div class="col-md-6 col-sm-6 col-xs-6">
+                   <div class="copyright"><p>Copyright © 2016 All Rights reserved by: <a href="http://templatestock.co">Template Stock</a>
+                 </p></div>
+               </div>
+               <!--End copyright-->
+
+               <!--start social icons-->
+               <div class="col-md-6 col-sm-6 col-xs-6">
+                   <div class="social-icons">
+                       <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                       </ul>
+                    </div>
+               </div>
+               <!--End social icons-->
+           </div> <!-- /.row-->
+       </div> <!-- /.container-->
+   </footer>
+   <!--End Footer-->
+
+   <a href="#" class="scrollup"> <i class="fa fa-chevron-up"> </i> </a>
+
+    <!--Plugins-->
+	<script type="text/javascript" src="{% static '' %}com/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="{% static '' %}com/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{% static '' %}com/js/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="{% static '' %}com/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="{% static '' %}com/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="{% static '' %}com/js/easing.js"></script>
+    <script type="text/javascript" src="{% static '' %}com/js/jquery.easypiechart.js"></script>
+    <script type="text/javascript" src="{% static '' %}com/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="{% static '' %}com/js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="{% static '' %}com/js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="{% static '' %}com/js/custom.js"></script>
+
+ </body>
+</html>
